@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SafeTravels2</string>
+    <string name="format_prompt">Choose format to decrypt file in</string>
+    //Google Drive
+    <string name="source_google_drive">Google Drive</string>
+    <string name="start_drive">Start Google Drive</string>
+    <string name="login">Log In</string>
+    <string name="logout">Log Out</string>
+    <string name="status_logged_out">Logged Out</string>
+    <string name="status_logged_in">Logged In</string>
+    <string name="status_user_cancelled">User Cancelled</string>
+    <string name="status_error">We found a problem: %1$s</string>
+    <string name="not_open_file">Could not open file</string>
+
+    <string-array name="format_arrays">
+        <item>.pdf</item>
+        <item>.docx</item>
+        <item>.doc</item>
+        <item>.txt</item>
+        <item>.log</item>
+        <item>.csv</item>
+        <item>.ppt</item>
+        <item>.jpg</item>
+        <item>.png</item>
+    </string-array>
+
+</resources>
