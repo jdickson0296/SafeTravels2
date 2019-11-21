@@ -3,7 +3,6 @@ package com.example.safetravels2
 import android.app.Activity
 import android.content.Intent
 import android.os.Environment
-//import android.support.v4.app.ActivityCompt
 import androidx.core.app.ActivityCompat
 import android.util.Log
 import com.google.android.gms.auth.api.signin.GoogleSignIn

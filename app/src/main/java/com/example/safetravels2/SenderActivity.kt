@@ -7,7 +7,6 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
-import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.content.Intent
