@@ -47,12 +47,12 @@ public class AESDecrypt {
             // file decryption
             Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
             cipher.init(Cipher.DECRYPT_MODE, secret, new IvParameterSpec(iv));
-            File file_e = new File(ctx.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "encryptedfile.des");
+            File file_e = new File(ctx.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "encryptedfile.txt");
             FileInputStream fis = new FileInputStream(file_encrypted);
 
             FileOutputStream fos;
             File decryptfile = new File(ctx.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "decrypted_file");
-            fos = new FileOutputStream(decryptfile + file_format);
+            fos = new FileOutputStream(decryptfile + ".txt");
             byte[] in = new byte[64];
             int read;
             while ((read = fis.read(in)) != -1) {

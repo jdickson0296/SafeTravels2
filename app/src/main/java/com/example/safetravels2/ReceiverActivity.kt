@@ -40,7 +40,6 @@ class ReceiverActivity : AppCompatActivity() {
         AES_key_text_R = findViewById(R.id.aes_key_r) as EditText
         enter_aes_r = findViewById(R.id.enter_aes_r) as TextView
         decrypt = findViewById(R.id.decrypt_button) as Button
-        spinner1 = findViewById(R.id.spinner1) as Spinner
 
         // function for when select is clicked
         select.setOnClickListener {
@@ -49,20 +48,6 @@ class ReceiverActivity : AppCompatActivity() {
                 .withRequestCode(1000)
                 .withHiddenFiles(true) // Show hidden files and folders
                 .start()
-        }
-
-
-        spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(
-                parent: AdapterView<*>,
-                view: View,
-                position: Int,
-                id: Long
-            ) {
-                extension_text = spinner1.selectedItem.toString()
-            }
-
-            override fun onNothingSelected(parent: AdapterView<*>) {}
         }
 
 

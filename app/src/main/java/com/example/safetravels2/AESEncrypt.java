@@ -27,7 +27,7 @@ public class AESEncrypt {
             FileInputStream inFile = new FileInputStream(filename);
             // encrypted file
             FileOutputStream outFile;
-            File file_e = new File(ctx.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "encryptedfile.des");
+            File file_e = new File(ctx.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "encryptedfile.txt");
             outFile = new FileOutputStream(file_e);
 
             // password, iv and salt should be transferred to the other end
