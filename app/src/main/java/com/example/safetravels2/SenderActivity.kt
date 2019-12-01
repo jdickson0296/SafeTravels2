@@ -52,7 +52,8 @@ class SenderActivity : AppCompatActivity() {
 
             try {
                 AESEncrypt.Encrypt(filename, AES_key_s, this@SenderActivity)
-            } catch (e: Exception) {
+            } catch (e: UninitializedPropertyAccessException) {
+                Toast.makeText(this@SenderActivity, "File was not selected", Toast.LENGTH_LONG).show()
                 e.printStackTrace()
             }
         }
