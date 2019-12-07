@@ -7,7 +7,6 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
-import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.content.Intent
@@ -53,7 +52,8 @@ class SenderActivity : AppCompatActivity() {
 
             try {
                 AESEncrypt.Encrypt(filename, AES_key_s, this@SenderActivity)
-            } catch (e: Exception) {
+            } catch (e: UninitializedPropertyAccessException) {
+                Toast.makeText(this@SenderActivity, "File was not selected", Toast.LENGTH_LONG).show()
                 e.printStackTrace()
             }
         }

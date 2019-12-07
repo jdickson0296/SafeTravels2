@@ -1,19 +1,14 @@
 package com.example.safetravels2
 
-import android.bluetooth.BluetoothProfile
 import android.os.Bundle
 import android.content.Intent
 import android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION
 import android.net.Uri
-//import android.support.v7.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatActivity
-//import android.support.design.widget.Snackbar
 import com.google.android.material.snackbar.Snackbar
-//import android.support.v4.content.FileProvider
 import androidx.core.content.FileProvider
 import android.webkit.MimeTypeMap
 import kotlinx.android.synthetic.main.activity_googledrive.*
-import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
 
 class googledrive : AppCompatActivity(), ServiceListener {

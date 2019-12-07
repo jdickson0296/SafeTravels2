@@ -73,7 +73,8 @@ class ReceiverActivity : AppCompatActivity() {
 
             try {
                 AESDecrypt.Decrypt(extension_text, filename, AES_key_r, this@ReceiverActivity)
-            } catch (e: Exception) {
+            } catch (e: UninitializedPropertyAccessException) {
+                Toast.makeText(this@ReceiverActivity, "File was not selected", Toast.LENGTH_LONG).show()
                 e.printStackTrace()
             }
         }
